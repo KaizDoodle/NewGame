@@ -1,4 +1,0 @@
-repository "Hollow@theDevTetrad@cloud"
-  path "/"
-    br "/main"
-    co "/main"
