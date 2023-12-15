@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 3.0F;
     public float groundDist;
-
     public LayerMask terrainLayer;
-    public Rigidbody rb;
-    public SpriteRenderer sr;
 
-    // Start is called before the first frame update
+    private Vector3 moveDirection = Vector3.zero;
+    private CharacterController controller;
+    private Animator animator;
+
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -32,19 +33,33 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
-        Vector3 moveDir = new Vector3(x, 0, y);
-        rb.velocity = moveDir * speed;
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        moveDirection *= speed;
 
-        if (x != 0 && x < 0)
+        // Log the moveDirection values
+        Debug.Log("Move Direction: " + moveDirection);
+
+        controller.Move(moveDirection * Time.deltaTime);
+
+        if(moveDirection.x > 0)
         {
-            sr.flipX = true;
+            animator.SetTrigger("MoveRight");
         }
-        else if (x != 0 && x > 0)
+        else if(moveDirection.x < 0)
         {
-            sr.flipX = false;
+            animator.SetTrigger("MoveLeft");
+        }
+        else if(moveDirection.z > 0)
+        {
+            animator.SetTrigger("MoveForward");
+        }
+        else if(moveDirection.z < 0)
+        {
+            animator.SetTrigger("MoveBackward");
+        }
+        else
+        {
+            animator.SetTrigger("Idle");
         }
     }
 }
-////hullo people its Nikolai
