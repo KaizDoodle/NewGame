@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask terrainLayer;
 
     private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller;
-    private Animator animator;
+    public CharacterController controller;
+    public Animator animator;
 
     void Start()
     {
