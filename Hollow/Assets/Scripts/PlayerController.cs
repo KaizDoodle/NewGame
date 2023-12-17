@@ -7,15 +7,19 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 3.0F;
     public float groundDist;
     public LayerMask terrainLayer;
+    public Rigidbody rb;
+    public SpriteRenderer sr;
 
     private Vector3 moveDirection = Vector3.zero;
     public CharacterController controller;
     public Animator animator;
 
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -23,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
-
-
         if (Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer))
         {
             if (hit.collider != null)
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = movePos;
             }
         }
+
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
