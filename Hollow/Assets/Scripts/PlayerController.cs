@@ -35,16 +35,26 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        moveDirection *= speed;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
-        // Log the moveDirection values
-        Debug.Log("Move Direction: " + moveDirection);
+        // Determine the dominant direction of movement
+        if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
+        {
+            moveDirection = new Vector3(horizontal, 0, 0);
+        }
+        else
+        {
+            moveDirection = new Vector3(0, 0, vertical);
+        }
+
+        moveDirection *= speed;
 
         controller.Move(moveDirection * Time.deltaTime);
 
         // Set the Horizontal and Vertical parameters based on the moveDirection vector
         animator.SetFloat("Horizontal", moveDirection.x);
         animator.SetFloat("Vertical", moveDirection.z);
+
     }
 }
