@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
+
+
         if (Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer))
         {
             if (hit.collider != null)
@@ -41,25 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(moveDirection * Time.deltaTime);
 
-        if(moveDirection.x > 0)
-        {
-            animator.SetTrigger("MoveRight");
-        }
-        else if(moveDirection.x < 0)
-        {
-            animator.SetTrigger("MoveLeft");
-        }
-        else if(moveDirection.z > 0)
-        {
-            animator.SetTrigger("MoveForward");
-        }
-        else if(moveDirection.z < 0)
-        {
-            animator.SetTrigger("MoveBackward");
-        }
-        else
-        {
-            animator.SetTrigger("Idle");
-        }
+        // Set the Horizontal and Vertical parameters based on the moveDirection vector
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.z);
     }
 }
