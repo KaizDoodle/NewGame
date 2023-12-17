@@ -143,13 +143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca78b3f4a7179247988a9d79ebe37bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   groundDist: 0
   terrainLayer:
     serializedVersion: 2
     m_Bits: 64
-  controller: {fileID: 0}
-  animator: {fileID: 0}
+  rb: {fileID: 11953788}
+  sr: {fileID: 11953787}
+  controller: {fileID: 11953786}
+  animator: {fileID: 11953785}
 --- !u!95 &11953785
 Animator:
   serializedVersion: 5
@@ -249,6 +251,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!54 &11953788 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4816778207876405345, guid: a5d4634293606b24cb09fb8705686aae,
+    type: 3}
+  m_PrefabInstance: {fileID: 908535177}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &363261975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,6 +319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021954124332450204, guid: 47afc6d33d09b2549a8264779b3431a0,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -532,12 +545,17 @@ PrefabInstance:
     - target: {fileID: 856975465458984982, guid: a5d4634293606b24cb09fb8705686aae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.719
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 856975465458984982, guid: a5d4634293606b24cb09fb8705686aae,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502447668270952326, guid: a5d4634293606b24cb09fb8705686aae,
+        type: 3}
+      propertyPath: m_Name
+      value: Point light
       objectReference: {fileID: 0}
     - target: {fileID: 2166733283010488908, guid: a5d4634293606b24cb09fb8705686aae,
         type: 3}
@@ -567,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 4816778207876405345, guid: a5d4634293606b24cb09fb8705686aae,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5555199765459051015, guid: a5d4634293606b24cb09fb8705686aae,
         type: 3}
