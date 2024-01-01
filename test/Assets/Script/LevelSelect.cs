@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class StartGame : MonoBehaviour
+public class LevelSelect : MonoBehaviour
 {
     public string LevelName;
 
