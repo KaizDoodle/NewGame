@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
+
 //when something get into the alta, make the runes glow
 namespace Cainos.PixelArtTopDown_Basic
 {
@@ -13,25 +16,20 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private Color curColor;
         private Color targetColor;
+        public string LevelName;
+
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            targetColor = new Color(1, 1, 1, 1);
+            LoadLevel();
         }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            targetColor = new Color(1, 1, 1, 0);
-        }
-
-        private void Update()
-        {
-            curColor = Color.Lerp(curColor, targetColor, lerpSpeed * Time.deltaTime);
-
-            foreach (var r in runes)
+            public void LoadLevel()
             {
-                r.color = curColor;
+                SceneManager.LoadScene(LevelName);
             }
-        }
+        
+
     }
-}
+
+    }
+
