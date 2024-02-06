@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Cainos.MainPlayerController
+namespace  Level_one 
 {
     public class PlayerController : MonoBehaviour
     {

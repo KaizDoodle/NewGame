@@ -4,12 +4,12 @@ using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
-
+namespace Level_one 
+{
     public class EnterDoor : MonoBehaviour
     {
-         
         public string sceneToLoad;
-        private bool enterAllowed;
+        private bool enterAllowed = false;
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.GetComponent<WoodGate>())
@@ -62,26 +62,4 @@ using UnityEngine.SceneManagement;
         }
     
     }
-
-    // private void OnTriggerEnter2D(Collider2D collision)
-    // {
-        
-    //     if (collision.GetComponent<BlueDoor>())
-    //     {
-    //         sceneToLoad = "Level2";
-    //         enterAllowed = true;
-    //     }
-    //     else if (collision.GetComponent<BrownDoor>())
-    //     {
-    //         sceneToLoad = "Level1";
-    //         enterAllowed = true;
-    //     }
-    // }
-
-    // private void OnTriggerExit2D(Collider2D collision)
-    // {
-    //     if (collision.GetComponent<BlueDoor>() || collision.GetComponent<BrownDoor>())
-    //     {
-    //         enterAllowed = false;
-    //     }
-    // }
+}

@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Level_one 
+{
 public class WoodGate : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,4 +16,5 @@ public class WoodGate : MonoBehaviour
     {
         
     }
+}
 }

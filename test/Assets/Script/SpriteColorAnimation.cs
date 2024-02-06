@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Cainos.PixelArtTopDown_Basic
+namespace Level_one 
 {
     //animate the sprite color base on the gradient and time
     public class SpriteColorAnimation : MonoBehaviour

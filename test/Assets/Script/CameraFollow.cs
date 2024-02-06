@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Cainos.CameraController
+namespace Level_one 
 {
+    
     //let camera follow target
     public class CameraFollow : MonoBehaviour
     {
