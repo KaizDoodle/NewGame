@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-    public TopDownCharacterController Player;
+  //  public PlayerController Player;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +19,14 @@ public class Death : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+   // private void OnTriggerEnter2D(Collider2D collision)
+  //  {
 
-        if (collision.GetComponent<TopDownCharacterController>() != null)
-        {
-            Player.GameOver();
-        }
+ //       if (collision.GetComponent<BoxCollider2D>() != null)
+ //       {
+  //          Player.GameOver();
+  //      }
 
-    }
+   // }
+
 }

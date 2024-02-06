@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Cainos.PixelArtTopDown_Basic
+namespace Cainos.MainPlayerController
 {
-    public class TopDownCharacterController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         public float speed;
 
@@ -13,6 +13,7 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void Start()
         {
+            DontDestroyOnLoad(gameObject);
             animator = GetComponent<Animator>();
         }
 
