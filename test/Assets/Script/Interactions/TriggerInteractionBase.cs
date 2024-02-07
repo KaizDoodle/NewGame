@@ -11,6 +11,35 @@ public class NewBehaviourScript : MonoBehaviour, IInteractable
     {
         Player = GameObject.FindGameObjectsWithTag("Player");
     }
-    public void Interact() {}
+
+    public void Update()
+    {
+        if (CanInteract)
+        {
+            if (UserInput.WasInteractPressed)
+            {
+                Interact();
+            }
+        }
+    }
+
+    private void OnTriggerEnter2d(Collider2D collision)
+    {
+        if (collision.GameObject == Player)
+        {
+            CanInteract = true;
+        }
+
+    }
+    private void OnTriggerExit2d(Collider2D collision)
+    {
+        if (collision.GameObject == Player)
+        {
+            CanInteract = false;
+        }
+    }
+
+
+    public virtual void Interact() {}
 
 }
