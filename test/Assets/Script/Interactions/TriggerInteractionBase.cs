@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour, IInteractable
+public class TriggerInteractionBase : MonoBehaviour, IInteractable
 {
     public GameObject Player { get; set;}
     public bool CanInteract { get; set; }
 
-    private void Start() 
+    private void Start()
     {
-        Player = GameObject.FindGameObjectsWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Update()
@@ -23,17 +23,17 @@ public class NewBehaviourScript : MonoBehaviour, IInteractable
         }
     }
 
-    private void OnTriggerEnter2d(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GameObject == Player)
+        if (collision.gameObject == Player)
         {
             CanInteract = true;
         }
 
     }
-    private void OnTriggerExit2d(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GameObject == Player)
+        if (collision.gameObject == Player)
         {
             CanInteract = false;
         }
