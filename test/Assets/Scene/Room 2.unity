@@ -312,7 +312,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1107221329}
+      addedObject: {fileID: 1107221324}
   m_SourcePrefab: {fileID: 100100000, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
 --- !u!1 &1107221323 stripped
 GameObject:
@@ -320,7 +320,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1107221322}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1107221329
+--- !u!114 &1107221324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,9 +329,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1107221323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7085814f7ff196244bd63d1dd7e32448, type: 3}
+  m_Script: {fileID: 11500000, guid: 03b2a79a0845cce4e951cb9c85b9858d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorToSpawnTo: 1
+  _sceneToLoad:
+    _sceneAsset: {fileID: 102900000, guid: 86e89bd9e4a9c5245a015cf17e3c0aae, type: 3}
+    _sceneName: Room 1
+  CurrentDoorPosition: 1
 --- !u!1 &1222015270
 GameObject:
   m_ObjectHideFlags: 0

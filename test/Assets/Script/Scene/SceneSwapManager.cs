@@ -24,9 +24,13 @@ public class SceneSwapManager : MonoBehaviour
 
     private IEnumerator FadeOutThenChangeScene(SceneField myScene, DoorTriggerInteraction.DoorToSpawnAt doorToSpawnAt = DoorTriggerInteraction.DoorToSpawnAt.None)
     {
-        //start fading to black 
-        yield return null;
-        //keep fading out 
+        SceneFadeManager.instance.StartFadeOut();
+
+        while(SceneFadeManager.instance.IsFadingOut)
+        {
+            yield return null;
+        }
+
         _doorToSpawnTo = doorToSpawnAt;
         SceneManager.LoadScene(myScene);
     }

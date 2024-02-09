@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class UserInput : MonoBehaviour
     
     private void Awake()
     {
+        Debug.Log(PlayerInput.actions["Interact"]);
         _moveAction = PlayerInput.actions["Movement"];
         _attackAction = PlayerInput.actions["Attack"];
         _dashAction = PlayerInput.actions["Dash"];
