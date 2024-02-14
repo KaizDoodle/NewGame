@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Level_one 
-{
     //animate the sprite color base on the gradient and time
     public class SpriteColorAnimation : MonoBehaviour
     {
@@ -30,4 +28,4 @@ namespace Level_one
             }
         }
     }
-}
+

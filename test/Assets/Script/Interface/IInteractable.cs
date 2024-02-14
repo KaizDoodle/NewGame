@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    GameObject Player {get; set;}
+    GameObject _player {get; set;}
     bool CanInteract {get; set;}
 
     void Interact();

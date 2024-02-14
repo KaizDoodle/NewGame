@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //when something get into the alta, make the runes glow
-namespace  Level_one 
-{
 
     public class PropsAltar : MonoBehaviour
     {
@@ -34,4 +32,3 @@ namespace  Level_one
             }
         }
     }
-}

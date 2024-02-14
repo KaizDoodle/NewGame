@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class TriggerInteractionBase : MonoBehaviour, IInteractable
 {
-    public GameObject Player { get; set;}
+    public GameObject _player { get; set;}
     public bool CanInteract { get; set; }
 
     private void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Update()
     {
         if (CanInteract)
         {
-            if (UserInput.WasInteractPressed)
+            if (InputManager.WasInteractPressed)
             {
                 Interact();
             }
@@ -25,7 +25,7 @@ public class TriggerInteractionBase : MonoBehaviour, IInteractable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == Player)
+        if (collision.gameObject == _player)
         {
             CanInteract = true;
         }
@@ -33,7 +33,7 @@ public class TriggerInteractionBase : MonoBehaviour, IInteractable
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == Player)
+        if (collision.gameObject == _player)
         {
             CanInteract = false;
         }

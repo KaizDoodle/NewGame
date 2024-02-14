@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Level_one
-{
     public class LayerTrigger : MonoBehaviour
     {
         public string layer;
@@ -22,4 +20,4 @@ namespace Level_one
         }
 
     }
-}
+
