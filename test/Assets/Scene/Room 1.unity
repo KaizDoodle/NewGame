@@ -19280,20 +19280,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.054211378, y: -0.41325504}
   m_Size: {x: 0.76414824, y: 0.76414824}
   m_Direction: 0
---- !u!114 &1622224639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947340481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6d459c328bd694898a39e8ee677858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layer: 
-  sortingLayer: 
 --- !u!1 &1622312049
 GameObject:
   m_ObjectHideFlags: 0
@@ -21712,10 +21698,6 @@ PrefabInstance:
         type: 3}
       insertIndex: 3
       addedObject: {fileID: 1622224634}
-    - targetCorrespondingSourceObject: {fileID: 5628018141983903104, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1622224639}
   m_SourcePrefab: {fileID: 100100000, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
 --- !u!1001 &6644944589558355623
 PrefabInstance:
