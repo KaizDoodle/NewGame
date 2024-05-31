@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorToSpawnTo: 1
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 86e89bd9e4a9c5245a015cf17e3c0aae, type: 3}
+    _sceneAsset: {fileID: 102900000, guid: 2b1ed7144bbff5d49976dfd86b23bddc, type: 3}
     _sceneName: Room 1
   CurrentDoorPosition: 1
 --- !u!1 &1222015270

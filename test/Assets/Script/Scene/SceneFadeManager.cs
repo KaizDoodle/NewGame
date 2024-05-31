@@ -40,7 +40,7 @@ public class SceneFadeManager : MonoBehaviour
 
         if (IsFadingIn)
         {
-            if (_fadeOutImage.color.a < 1f)
+            if (_fadeOutImage.color.a > 0f)
             {
                 _fadeOutStartColor.a += Time.deltaTime * _fadeInSpeed;
                 _fadeOutImage.color = _fadeOutStartColor;

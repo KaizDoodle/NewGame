@@ -24,10 +24,12 @@ using UnityEngine;
 
         private void Update()
         {
-            _movement.Set(InputManager.Movement.x, InputManager.Movement.y);
+            _movement.Set(UserInput.Movement.x, UserInput.Movement.y);
             _rb.velocity = _movement * _moveSpeed;
 
+
             _animator.SetFloat(_horizontal, _movement.x);
+
             _animator.SetFloat(_vertical, _movement.y);
 
             if (_movement != Vector2.zero){

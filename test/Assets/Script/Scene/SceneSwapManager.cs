@@ -21,7 +21,7 @@ public class SceneSwapManager : MonoBehaviour
         instance.StartCoroutine(instance.FadeOutThenChangeScene(myScene, doorToSpawnAt));
     }
 
-    private IEnumerator FadeOutThenChangeScene(SceneField myScene, DoorTriggerInteraction.DoorToSpawnAt doorToSpawnAt = DoorTriggerInteraction.DoorToSpawnAt.One)
+    private IEnumerator FadeOutThenChangeScene(SceneField myScene, DoorTriggerInteraction.DoorToSpawnAt doorToSpawnAt = DoorTriggerInteraction.DoorToSpawnAt.None)
     {
         SceneFadeManager.instance.StartFadeOut();
 
