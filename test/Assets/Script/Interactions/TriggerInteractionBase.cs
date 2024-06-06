@@ -6,13 +6,14 @@ public class TriggerInteractionBase : MonoBehaviour, IInteractable
 {
     public GameObject _player { get; set;}
     public bool CanInteract { get; set; }
-
-    private Rigidbody2D _playerRigidbody;
+    private BoxCollider2D _doorCollider;
+    private BoxCollider2D _playerCollider;
 
     private void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
-        _playerRigidbody = _player.GetComponent<Rigidbody2D>();
+        _playerCollider = _player.GetComponent<BoxCollider2D>();
+        _doorCollider = GetComponent<BoxCollider2D>();
     }
 
     public void Update()
@@ -26,19 +27,19 @@ public class TriggerInteractionBase : MonoBehaviour, IInteractable
         }
     }
 
-    private void FixedUpdate()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (_playerRigidbody != null)
+        if (other.gameObject == _player)
         {
-            float distance = Vector2.Distance(_playerRigidbody.position, GetComponent<Rigidbody2D>().position);
-            if (distance < 0.5f) // Adjust this value as needed
-            {
-                CanInteract = true;
-            }
-            else
-            {
-                CanInteract = false;
-            }
+            CanInteract = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject == _player)
+        {
+            CanInteract = false;
         }
     }
 

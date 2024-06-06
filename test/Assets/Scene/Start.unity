@@ -20829,7 +20829,7 @@ MonoBehaviour:
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 12422262f63b7874887cefaea471bdb0, type: 3}
     _sceneName: Room 2
-  CurrentDoorPosition: 0
+  CurrentDoorPosition: 1
 --- !u!1 &2135407828
 GameObject:
   m_ObjectHideFlags: 0

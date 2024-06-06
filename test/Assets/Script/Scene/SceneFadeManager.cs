@@ -10,7 +10,7 @@ public class SceneFadeManager : MonoBehaviour
     [Range(0.1f, 10f), SerializeField] private float _fadeOutSpeed = 5f;
     [Range(0.1f, 10f), SerializeField] private float _fadeInSpeed = 5f;
 
-    [SerializeField] private Color _fadeOutStartColor;
+    [SerializeField] private Color FadeOutStartColor;
 
     public bool IsFadingOut {get; private set;}
     public bool IsFadingIn {get; private set;}
@@ -20,7 +20,7 @@ public class SceneFadeManager : MonoBehaviour
         {
             instance = this;
         }
-        _fadeOutStartColor.a = 0f;
+        FadeOutStartColor.a = 0f;
     }
 
     private void Update()
@@ -29,8 +29,8 @@ public class SceneFadeManager : MonoBehaviour
         {
             if (_fadeOutImage.color.a < 1f)
             {
-                _fadeOutStartColor.a += Time.deltaTime * _fadeOutSpeed;
-                _fadeOutImage.color = _fadeOutStartColor;
+                FadeOutStartColor.a += Time.deltaTime * _fadeOutSpeed;
+                _fadeOutImage.color = FadeOutStartColor;
             }
             else
             {
@@ -42,8 +42,8 @@ public class SceneFadeManager : MonoBehaviour
         {
             if (_fadeOutImage.color.a > 0f)
             {
-                _fadeOutStartColor.a += Time.deltaTime * _fadeInSpeed;
-                _fadeOutImage.color = _fadeOutStartColor;
+                FadeOutStartColor.a -= Time.deltaTime * _fadeInSpeed;
+                _fadeOutImage.color = FadeOutStartColor;
             }
             else
             {
@@ -54,7 +54,7 @@ public class SceneFadeManager : MonoBehaviour
 
     public void StartFadeOut()
     {
-        _fadeOutImage.color = _fadeOutStartColor;
+        _fadeOutImage.color = FadeOutStartColor;
         IsFadingOut = true;
     }
 
@@ -62,7 +62,7 @@ public class SceneFadeManager : MonoBehaviour
     {
         if (_fadeOutImage.color.a >= 1f)
         {
-        _fadeOutImage.color = _fadeOutStartColor;
+        _fadeOutImage.color = FadeOutStartColor;
         IsFadingIn = true;
         }
     }
