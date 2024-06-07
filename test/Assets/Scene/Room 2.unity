@@ -138,6 +138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Props Wooden Gate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635374, guid: 6a057178eb028e94fb93bf39262ea3e8,
         type: 3}
       propertyPath: m_Size.x
@@ -290,7 +295,7 @@ MonoBehaviour:
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 2b1ed7144bbff5d49976dfd86b23bddc, type: 3}
     _sceneName: Room 1
-  CurrentDoorPosition: 1
+  CurrentDoorPosition: 2
 --- !u!1 &735629573
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,51 +373,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2032008, y: 0.20282936}
   m_EdgeRadius: 0
---- !u!1 &1034023624
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1034023625}
-  - component: {fileID: 1034023626}
-  m_Layer: 21
-  m_Name: Tilemap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1034023625
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034023624}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2144350142}
-  m_Father: {fileID: 1510795220}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!156049354 &1034023626
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034023624}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
 --- !u!1 &1271485399
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1341413588}
+  - {fileID: 2144350142}
   m_Father: {fileID: 1283197212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &1271485401
@@ -487,8 +448,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2049275710}
   - {fileID: 164852694}
+  - {fileID: 2049275710}
   - {fileID: 1271485400}
   m_Father: {fileID: 1622312051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2500,38 +2461,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1510795219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510795220}
-  m_Layer: 21
-  m_Name: LAYER 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1510795220
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510795219}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1034023625}
-  m_Father: {fileID: 1622312051}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522010757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,7 +2568,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1283197212}
-  - {fileID: 1510795220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2049275709
@@ -2654,6 +2582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PF Props Wooden Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635374, guid: 6a057178eb028e94fb93bf39262ea3e8,
         type: 3}
@@ -2822,7 +2755,7 @@ GameObject:
   - component: {fileID: 2144350145}
   - component: {fileID: 2144350144}
   - component: {fileID: 2144350143}
-  m_Layer: 21
+  m_Layer: 20
   m_Name: Layer 1 - Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2842,7 +2775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1034023625}
+  m_Father: {fileID: 1271485400}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!66 &2144350143
 CompositeCollider2D:

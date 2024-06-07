@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 11656404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92ef082ed753c3b43bf185cbd280c4e0, type: 3}
+  m_Script: {fileID: 11500000, guid: bb5d88e1152dd6249a7d30792c2df9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: Settings
@@ -753,10 +753,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1743493610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92ef082ed753c3b43bf185cbd280c4e0, type: 3}
+  m_Script: {fileID: 11500000, guid: bb5d88e1152dd6249a7d30792c2df9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Level 1
+  LevelName: Room 1
 --- !u!1 &2098303239
 GameObject:
   m_ObjectHideFlags: 0

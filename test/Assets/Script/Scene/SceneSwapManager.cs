@@ -78,6 +78,8 @@ public class SceneSwapManager : MonoBehaviour
 
                 if (SceneManager.GetActiveScene().name == "Room 2")
                 CalculateSpawnPosition(true);
+                else 
+                CalculateSpawnPosition(false);
                 return;
             }
         }
@@ -89,7 +91,7 @@ public class SceneSwapManager : MonoBehaviour
         if (indoor == true ){
             _playerSpawnPosition = _doorColl.transform.position - new Vector3(0f, colliderHeight - 2, 0f);
         } else {
-            _playerSpawnPosition = _doorColl.transform.position - new Vector3(0f, colliderHeight + 1, 0f);
+            _playerSpawnPosition = _doorColl.transform.position - new Vector3(0f, colliderHeight, 0f);
         }
         
 
