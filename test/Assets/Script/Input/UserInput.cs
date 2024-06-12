@@ -10,12 +10,12 @@ public class UserInput : MonoBehaviour
     public static Vector2 Movement;
 
     //public static bool WasAttckPressed;
-    //public static bool WasDashPressed;
+    public static bool WasShiftPressed;
     public static bool WasInteractPressed;
     
     private InputAction _moveAction;
     //private InputAction _attackAction;
-    //private InputAction _dashAction;
+    private InputAction _shiftAction;
     private InputAction _interactAction;
     
     public void Awake()
@@ -23,7 +23,7 @@ public class UserInput : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions["Move"];
         //_attackAction = _playerInput.actions["Attack"];
-        //_dashAction = _playerInput.actions["Dash"];
+        _shiftAction = _playerInput.actions["Shift"];
         _interactAction = _playerInput.actions["Interact"];
     }
 
@@ -33,7 +33,7 @@ public class UserInput : MonoBehaviour
         Movement = _moveAction.ReadValue<Vector2>();
 
         //WasAttckPressed = _attackAction.WasPressedThisFrame();
-        //WasDashPressed = _dashAction.WasPressedThisFrame();
+        WasShiftPressed = _shiftAction.IsPressed();
         WasInteractPressed = _interactAction.WasPressedThisFrame();
     }
 }
