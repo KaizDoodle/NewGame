@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 271692400}
   - component: {fileID: 271692399}
   - component: {fileID: 271692403}
-  m_Layer: 18
+  m_Layer: 5
   m_Name: FadeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,6 +1929,7 @@ GameObject:
   - component: {fileID: 666954536}
   - component: {fileID: 666954535}
   - component: {fileID: 666954538}
+  - component: {fileID: 666954539}
   m_Layer: 18
   m_Name: 'Enemy '
   m_TagString: Untagged
@@ -1998,7 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a40701bb6a87141a767baaea9282b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
 --- !u!212 &666954537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2064,6 +2065,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+--- !u!58 &666954539
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666954532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.40625}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &731164572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2315,7 +2351,7 @@ GameObject:
   - component: {fileID: 1049864172}
   - component: {fileID: 1049864174}
   - component: {fileID: 1049864173}
-  m_Layer: 18
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3133,7 +3169,7 @@ PrefabInstance:
     - target: {fileID: 5784895256579905881, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
       propertyPath: m_Layer
-      value: 18
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5784895256579905886, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
@@ -3228,7 +3264,7 @@ PrefabInstance:
     - target: {fileID: 5784895257406628654, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
       propertyPath: m_Layer
-      value: 18
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5784895257406628655, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
@@ -3358,7 +3394,7 @@ PrefabInstance:
     - target: {fileID: 5784895257671249256, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
       propertyPath: m_Layer
-      value: 18
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5784895257671249257, guid: 17cbc357bf20de74485f5f5d54b77b72,
         type: 3}
