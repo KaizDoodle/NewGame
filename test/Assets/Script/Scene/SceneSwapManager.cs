@@ -29,7 +29,6 @@ public class SceneSwapManager : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _playerColl = _player.GetComponent<Collider2D>();
 
-    
     }
 
     private void OnEnable(){
@@ -46,7 +45,7 @@ public class SceneSwapManager : MonoBehaviour
         instance.StartCoroutine(instance.FadeOutThenChangeScene(myScene, doorToSpawnAt));
     }
 
-    private IEnumerator FadeOutThenChangeScene(SceneField myScene, DoorTriggerInteraction.DoorToSpawnAt doorToSpawnAt = DoorTriggerInteraction.DoorToSpawnAt.None)
+    public IEnumerator FadeOutThenChangeScene(SceneField myScene, DoorTriggerInteraction.DoorToSpawnAt doorToSpawnAt = DoorTriggerInteraction.DoorToSpawnAt.None)
     {
         SceneFadeManager.instance.StartFadeOut();
 
