@@ -32,15 +32,18 @@ public class UserInput : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (UserInput.WasAttackPressed ){
+
+        if (UserInput.WasAttackPressed && attackTimeCounter > 1.5f){
             attackTimeCounter = 0f;
         }
         
         attackTimeCounter += Time.deltaTime;
         
         //cant move while attacking 
-        if (attackTimeCounter > 0.5f){
+        if (attackTimeCounter > 0.2f){
             Movement = _moveAction.ReadValue<Vector2>();
+        } else {
+                Movement.Set(0f, 0f);
         }
         WasAttackPressed = _attackAction.WasPressedThisFrame();
         WasShiftPressed = _shiftAction.IsPressed();

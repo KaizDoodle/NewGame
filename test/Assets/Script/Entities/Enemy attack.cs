@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-public class PlayerAttack : MonoBehaviour
+public class Enemyattack : MonoBehaviour
 {
 
     [SerializeField] private Transform attackTransform;
@@ -33,27 +33,13 @@ public class PlayerAttack : MonoBehaviour
     
     private void Update()
     {
-         if (UserInput.WasAttackPressed && attackTimeCounter >= timeBtwAttacks ){  
+         if (Enemy.canAttack && attackTimeCounter >= timeBtwAttacks ){  
              attackTimeCounter = 0f;
-            //Attack();
             anim.SetTrigger("attack");
          }
          attackTimeCounter += Time.deltaTime;
     }
-/*
-    public void Attack(){
-        hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, attackableLayer);
-        
-        for (int i = 0; i < hits.Length; i++){
-            
-            IDamageable IDamageable = hits [i].collider.gameObject.GetComponent<IDamageable>();
 
-            if (IDamageable !=null){
-                IDamageable.Damage(damageAmount);
-            }
-        }
-    }
-*/
     public IEnumerator DamageWhileSlashIsActive(){
         
         ShouldBeDamaging = true;
