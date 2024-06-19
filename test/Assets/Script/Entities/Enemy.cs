@@ -27,8 +27,8 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other){
         if (other.gameObject.tag == "Player"){
-            canAttack = false;
             target = null;
+            canAttack = false;
         }
     }
 

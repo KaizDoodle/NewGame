@@ -11,7 +11,7 @@ public class Enemyattack : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private LayerMask attackableLayer;
     [SerializeField] private float damageAmount = 1f;
-    [SerializeField] private float timeBtwAttacks = 0.75f;
+    [SerializeField] private float timeBtwAttacks = 0f;
     
     public bool ShouldBeDamaging {get; private set;} = false;
     

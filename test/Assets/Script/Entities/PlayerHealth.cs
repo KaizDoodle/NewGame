@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public Healthbar healthbar;
 
     public bool HasTakenDamage {get; set;}
+    
 
     private void Start()
     {

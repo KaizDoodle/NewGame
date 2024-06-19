@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float damageAmount = 1f;
     [SerializeField] private float timeBtwAttacks = 0.75f;
     
-    public bool ShouldBeDamaging {get; private set;} = false;
+    public bool ShouldBeDamaging {get; private set;} = true;
     
     private RaycastHit2D[] hits;
 
@@ -35,8 +35,7 @@ public class PlayerAttack : MonoBehaviour
     {
          if (UserInput.WasAttackPressed && attackTimeCounter >= timeBtwAttacks ){  
              attackTimeCounter = 0f;
-            //Attack();
-            anim.SetTrigger("attack");
+            anim.SetTrigger("attackTrue");
          }
          attackTimeCounter += Time.deltaTime;
     }
