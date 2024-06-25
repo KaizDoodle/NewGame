@@ -10,6 +10,9 @@ public class LevelSelect : MonoBehaviour
 {
     public string LevelName;
 
+    public void Update(){
+
+    }
     public void LoadLevel()
     {
         SceneManager.LoadScene(LevelName);

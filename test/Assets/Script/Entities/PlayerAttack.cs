@@ -30,6 +30,26 @@ public class PlayerAttack : MonoBehaviour
         attackTimeCounter = timeBtwAttacks;
 
     }
+
+    private void PlayAttackAnimation(Vector2 direction)
+{
+    if (direction == Vector2.up)
+    {
+        anim.SetTrigger("attackUp");
+    }
+    else if (direction == Vector2.down)
+    {
+        anim.SetTrigger("attackDown");
+    }
+    else if (direction == Vector2.left)
+    {
+        anim.SetTrigger("attackLeft");
+    }
+    else if (direction == Vector2.right)
+    {
+        anim.SetTrigger("attackRight");
+    }
+}
     
     private void Update()
     {

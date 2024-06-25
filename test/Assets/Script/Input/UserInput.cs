@@ -40,7 +40,7 @@ public class UserInput : MonoBehaviour
         attackTimeCounter += Time.deltaTime;
         
         //cant move while attacking 
-        if (attackTimeCounter > 0.2f){
+        if (attackTimeCounter > 0.5f){
             Movement = _moveAction.ReadValue<Vector2>();
         } else {
                 Movement.Set(0f, 0f);

@@ -21,7 +21,7 @@ public class Enemyattack : MonoBehaviour
 
     private Animator anim;
 
-    private float attackTimeCounter;
+    public static float attackTimeCounter;
 
 
     private void Start(){
@@ -34,7 +34,7 @@ public class Enemyattack : MonoBehaviour
     private void Update()
     {
          if (Enemy.canAttack && attackTimeCounter >= timeBtwAttacks ){  
-             attackTimeCounter = 0f;
+            attackTimeCounter = 0f;
             anim.SetTrigger("attack");
          }
          attackTimeCounter += Time.deltaTime;

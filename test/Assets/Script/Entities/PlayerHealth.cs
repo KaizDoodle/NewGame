@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     }
 
     private void Update(){
-               Debug.Log(currentHealth);
+            //    Debug.Log(currentHealth);
         healthbar.SetHealth(currentHealth);
     }
 

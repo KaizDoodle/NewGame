@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1406ce4fd81b60742be2e826ad52266a
+guid: 5f30f8e7b269b124cbf7bf69e921c8b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,379 +110,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Char.movementsheet_0
+      name: wiggle,full-Sheet-export_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 64
-        width: 20
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4af634f9eb7886e478188bc4985053e0
-      internalID: -1782733784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 64
-        width: 19
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb3e14f87d9543444b67d04e9c32e5d0
-      internalID: -34640059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 64
-        width: 18
+        x: 0
+        y: 34
+        width: 29
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32cc951a4d50fad48a22c2ca6b5c33cd
-      internalID: 356387557
+      spriteID: 50b79ab29f5c986439a3d7e725b8e86d
+      internalID: 254444573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char.movementsheet_3
+      name: wiggle,full-Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 103
+        x: 32
         y: 64
-        width: 19
+        width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c2b46a9d96b9f1449dd135b736f275a
-      internalID: 590723289
+      spriteID: 6f24ad259921c724ca95dbbad2fca46e
+      internalID: 1566007046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char.movementsheet_4
+      name: wiggle,full-Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 64
-        width: 20
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36a42626a5fe5cf4bb29c28d97700bc2
-      internalID: 607374435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 64
-        width: 20
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddba6660b785d9f49a63cdcfbf22b0d2
-      internalID: -791622740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_6
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 32
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87fa5958b5152bd4dac8b5bfd468d115
-      internalID: -1427967089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_7
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 32
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d20cbc3cf6ce03e49b83a136fd191e4d
-      internalID: -1299352908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_8
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 32
-        width: 17
+        x: 65
+        y: 66
+        width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2034aa1dffc16884ebdf011827fc822f
-      internalID: -1595822623
+      spriteID: b4ecf1899ab1d4a45b3e9d7f63ad0e3a
+      internalID: 1728371177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char.movementsheet_9
+      name: wiggle,full-Sheet-export_3
       rect:
         serializedVersion: 2
-        x: 102
-        y: 32
-        width: 18
+        x: 160
+        y: 65
+        width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192c9bfe5328081418925b37972a2b84
-      internalID: -1289802420
+      spriteID: 20fde514ed926c1418c181b7c7dc6ddf
+      internalID: -1094019571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char.movementsheet_10
+      name: wiggle,full-Sheet-export_4
       rect:
         serializedVersion: 2
-        x: 134
-        y: 33
-        width: 17
+        x: 192
+        y: 64
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597f022ec9e9d6d4c85ccef38bfedafd
+      internalID: -1807228967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 34
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3389ea4520a43541982c4ad15bd1499
+      internalID: -1634389080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 34
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa4a4609576e734ba95f68073fc45ca
+      internalID: -902192326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 34
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c082238ad4de26b4da57bfe6dfb75f7b
+      internalID: 169179405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7e3f6cc1c47084aaffc29175dc8146
+      internalID: -1679950111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8c9c6464810734da4ca496e9869723
+      internalID: -82111524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925affe306a893c4da692d6e43fd1694
+      internalID: 335331992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612553016373bd74aa18a07964c6ab67
+      internalID: -452580484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_14
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc58201d6001d5d4d9705763fe109443
+      internalID: 141889452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wiggle,full-Sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3cbe13afbeedcd4aab15b77497e5f4e
-      internalID: -1917763341
+      spriteID: 173af9e37b3456b448daa09debaf5fcb
+      internalID: -1676965008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Char.movementsheet_11
+      name: wiggle,full-Sheet-export_9
       rect:
         serializedVersion: 2
-        x: 165
-        y: 32
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25a4963b6899a2e4ea5e2852946342a1
-      internalID: -1247125341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_12
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 0
-        width: 23
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42cd848a14204ff4c95e25775e7afd7c
-      internalID: -393809844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_13
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 23
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8131c367f49f60f4aa46c7e3d140eff6
-      internalID: -1311455184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_14
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 0
-        width: 23
+        x: 191
+        y: 34
+        width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f07fe398c951f0e4fa48ae5119df516e
-      internalID: 1477025245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_15
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e53d2b6f86dd9424fad4b3ad91e9f7a3
-      internalID: 1799253180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_16
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 23
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93e663ca549953c47af206fa41238bce
-      internalID: 880358351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Char.movementsheet_17
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 0
-        width: 23
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 584ccc52041aea74f8e191a08a421163
-      internalID: 1438352818
+      spriteID: 6295f5e0eeee7e3479b1ec3d732ebf16
+      internalID: 1465506332
       vertices: []
       indices: 
       edges: []
@@ -498,24 +435,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Char.movementsheet_0: -1782733784
-      Char.movementsheet_1: -34640059
-      Char.movementsheet_10: -1917763341
-      Char.movementsheet_11: -1247125341
-      Char.movementsheet_12: -393809844
-      Char.movementsheet_13: -1311455184
-      Char.movementsheet_14: 1477025245
-      Char.movementsheet_15: 1799253180
-      Char.movementsheet_16: 880358351
-      Char.movementsheet_17: 1438352818
-      Char.movementsheet_2: 356387557
-      Char.movementsheet_3: 590723289
-      Char.movementsheet_4: 607374435
-      Char.movementsheet_5: -791622740
-      Char.movementsheet_6: -1427967089
-      Char.movementsheet_7: -1299352908
-      Char.movementsheet_8: -1595822623
-      Char.movementsheet_9: -1289802420
+      wiggle,full-Sheet-export_0: -1676965008
+      wiggle,full-Sheet-export_1: 1566007046
+      wiggle,full-Sheet-export_10: -1679950111
+      wiggle,full-Sheet-export_11: -82111524
+      wiggle,full-Sheet-export_12: 335331992
+      wiggle,full-Sheet-export_13: -452580484
+      wiggle,full-Sheet-export_14: 141889452
+      wiggle,full-Sheet-export_15: 1037466346
+      wiggle,full-Sheet-export_16: 883149833
+      wiggle,full-Sheet-export_2: 1728371177
+      wiggle,full-Sheet-export_3: -1094019571
+      wiggle,full-Sheet-export_4: -1807228967
+      wiggle,full-Sheet-export_5: 254444573
+      wiggle,full-Sheet-export_6: -1634389080
+      wiggle,full-Sheet-export_7: -902192326
+      wiggle,full-Sheet-export_8: 169179405
+      wiggle,full-Sheet-export_9: 1465506332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
